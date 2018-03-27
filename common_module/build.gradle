@@ -39,7 +39,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //greendao
-    compile 'org.greenrobot:greendao:3.2.2'
+    //compile 'org.greenrobot:greendao:3.2.2'
     //okHttpUtils
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'me.jessyan:arms:2.3.1'
