@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+//greendao
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+//        applicationId "com.mtm.mcommon"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.2'
+    //okHttpUtils
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'me.jessyan:arms:2.3.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}
+greendao {
+    schemaVersion 1  //数据库schema版本，也可以理解为数据库版本号
+    daoPackage 'com.greendao.gen' //设置DaoMaster、DaoSession、Dao包名
+    targetGenDir 'src/main/java'  //设置DaoMaster、DaoSession、Dao目录
+}
