@@ -1,6 +1,7 @@
 <h1 align="center">公共库</h1>
 
 <p align="center">
+  <a href="https://https://github.com/pengMaster/commonModule.gitr">
     <img src="https://img.shields.io/badge/bintray-v2.3.5-brightgreen.svg" alt="Latest Stable Version" />
   </a>
   <a href="https://github.com/pengMaster">
@@ -15,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/pengMaster">
+  <a href="https://github.com/pengMaster/commonModule.git">
     <b>开启旅程</b>
   </a>
 </p> 
