@@ -1,7 +1,7 @@
 <h1 align="center">公共库</h1>
 
 <p align="center">
-  <a href="https://https://github.com/pengMaster/commonModule.gitr">
+  <a href="https://https://github.com/pengMaster/commonModule.git">
     <img src="https://img.shields.io/badge/bintray-v2.3.5-brightgreen.svg" alt="Latest Stable Version" />
   </a>
   <a href="https://github.com/pengMaster">
